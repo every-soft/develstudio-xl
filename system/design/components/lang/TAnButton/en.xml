@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<messages> 
+    <i>
+        <n>One Color_</n>
+        <v>Unpressed Color</v>
+    </i>
+    <i>
+        <n>Two Color_</n>
+        <v>Pressed Color</v>
+    </i>
+    <i>
+        <n>Three Color_</n>
+        <v>Hover Color</v>
+    </i>
+    <i>
+        <n>Four Color_</n>
+        <v>Unhover Color</v>
+    </i>
+</messages>

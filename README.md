@@ -1,2 +1,19 @@
-# develstudio-xl
- Unofficial update of the GUI application development environment in PHP (my old project).
+DevelStudio XL — неофициальное обновление свободной интегрированной среды разработки PHP DevelStudio.
+
+Офф. сайт: vk.com/evsoft
+Автор обновления: Стасевич Иван Александрович
+Тестировщики: Подвирный Никита, Кусов Андрей, Котов Виталий, Ларкин Дмитрий
+
+Every Software, 2021
+
+-----------------------------
+Исходный README.txt
+-----------------------------
+
+PHP DevelStudio 3.0 Beta 2 (3.0.2.0)
+
+Офф. сайт: ds.develnext.org
+E-Mail: dz@dim-s.net
+Автор: Зайцев Дмитрий Геннадьевич
+
+Dim-S SoftWare (c) 2012

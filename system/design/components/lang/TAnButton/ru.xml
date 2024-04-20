@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<messages> 
+    <i>
+        <n>TAnButton_Caption</n>
+        <v>Кнопка с анимацией</v>
+    </i>
+    
+    <i>
+        <n>One Color_</n>
+        <v>Цвет при отжатии</v>
+    </i>
+    <i>
+        <n>Two Color_</n>
+        <v>Цвет при нажатии</v>
+    </i>
+    <i>
+        <n>Three Color_</n>
+        <v>Цвет когда курсор на объекте</v>
+    </i>
+    <i>
+        <n>Four Color_</n>
+        <v>Цвет когда курсор вне объекта</v>
+    </i>
+</messages>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<messages>
+
+    <i>
+        <n>Enabled color</n>
+        <v>Активный цвет</v>
+    </i>
+
+    <i>
+        <n>Disabled color</n>
+        <v>Неактивный цвет</v>
+    </i>
+
+    <i>
+        <n>Switched</n>
+        <v>Включен</v>
+    </i>
+
+    <i>
+        <n>Smoothness</n>
+        <v>Плавность</v>
+    </i>
+    
+</messages>

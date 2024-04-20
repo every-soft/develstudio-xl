@@ -1,0 +1,39 @@
+// DevelStudio - ¬ключить DragAndDrop картинок
+global $fmMain, $_sc, $myInspect;
+$fmEdit = c('fmEdit');
+if(!$fmMain->drop){
+	$fmMain->drop = new TDropFilesTarget($fmMain);
+	$fmMain->drop->enabled = 1;
+	$fmMain->drop->OnDropFiles = function($self, $files, $x, $y)use($fmEdit){
+		global $myProperties, $_sc, $myInspect;
+		$files = str_replace('\\', '/', $files);
+		preg_match_all('/(\w.+?)\n/i', $files, $re);
+		$n = 1;
+		$gs = $_sc->gridSize;
+		$_sc->clearTargets();
+		foreach($re[1] as $file){
+			$size = @getimagesize($file);
+			if($size){
+				$img = new TMImage($fmEdit);
+				$img->parent = $fmEdit;
+				$img->loadFromFile($file);
+				do{$name = 'image'.$n++;}while($fmEdit->findComponent($name));
+				$img->name = $name;
+				$img->x = $d;
+				$img->y = $d;
+				$img->w = round($img->w/$gs)*$gs;
+				$img->h = round($img->h/$gs)*$gs;
+				$_sc->addTarget($img);
+				$myInspect->addItem($img);
+				$d += $_sc->gridSize;
+			}
+		}
+		$myInspect->selectObject($img);
+		$panel = $myProperties->panels[$img->class_name]['PANEL'];
+		$panel->show();
+		$panel->toFront();
+		$myProperties->setProps();
+		myInspect::genList($img);
+		$myProperties->last_class = rtii_class($img->self);
+	};
+}

@@ -1,0 +1,1 @@
+<? $result =array(); $result['GROUP'] ='DSXL'; $result['CLASS'] =basenameNoExt(__FILE__); $result['CAPTION'] =t('TAnButton_Caption'); $result['SORT'] =200; $result['NAME'] ='AnButton'; $result['PROPS'] =array('autoSize' => false, 'alignment'=>'taCenter', 'layout'=>'tlCenter'); $result['W'] =20; $result['H'] =5; return $result;
